@@ -1,0 +1,6 @@
+framework module Pods_Google_ios_login {
+  umbrella header "Pods-Google-ios-login-umbrella.h"
+
+  export *
+  module * { export * }
+}
