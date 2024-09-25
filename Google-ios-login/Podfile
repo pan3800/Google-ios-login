@@ -8,6 +8,8 @@ target 'Google-ios-login' do
   # Pods for Google-ios-login
   pod 'AlertToast'
   pod 'SDWebImageSwiftUI'
+  pod 'GoogleSignIn'
+  pod 'GoogleSignInSwiftSupport'
 
   target 'Google-ios-loginTests' do
     inherit! :search_paths
