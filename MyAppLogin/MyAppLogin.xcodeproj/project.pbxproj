@@ -14,11 +14,11 @@
 		19CDF8702CA7FB3D00C51334 /* MyAppLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDF86F2CA7FB3D00C51334 /* MyAppLoginTests.swift */; };
 		19CDF87A2CA7FB3D00C51334 /* MyAppLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDF8792CA7FB3D00C51334 /* MyAppLoginUITests.swift */; };
 		19CDF87C2CA7FB3D00C51334 /* MyAppLoginUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDF87B2CA7FB3D00C51334 /* MyAppLoginUITestsLaunchTests.swift */; };
-		19CDF8892CA7FD6800C51334 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19CDF8882CA7FD6800C51334 /* GoogleService-Info.plist */; };
 		19CDF88C2CA7FDF300C51334 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 19CDF88B2CA7FDF300C51334 /* FirebaseAuth */; };
 		19CDF88E2CA7FDF300C51334 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 19CDF88D2CA7FDF300C51334 /* FirebaseFirestore */; };
 		19CDF8902CA7FDF300C51334 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 19CDF88F2CA7FDF300C51334 /* FirebaseFirestoreSwift */; };
 		19CDF8922CA7FDF300C51334 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 19CDF8912CA7FDF300C51334 /* FirebaseStorage */; };
+		19CDF8942CA803AB00C51334 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19CDF8932CA803AB00C51334 /* GoogleService-Info.plist */; };
 		490AA89DC89C29EA46819450 /* Pods_MyAppLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14534271BD2542C4B1332658 /* Pods_MyAppLoginTests.framework */; };
 		8477C8AA1BDCA33FE9182A1C /* Pods_MyAppLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408C285BF44A01BA6637D165 /* Pods_MyAppLogin.framework */; };
 		96453B288070F52716A8ADD5 /* Pods_MyAppLogin_MyAppLoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB6309EAB13D957C5C51A6F /* Pods_MyAppLogin_MyAppLoginUITests.framework */; };
@@ -53,7 +53,8 @@
 		19CDF8752CA7FB3D00C51334 /* MyAppLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAppLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CDF8792CA7FB3D00C51334 /* MyAppLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppLoginUITests.swift; sourceTree = "<group>"; };
 		19CDF87B2CA7FB3D00C51334 /* MyAppLoginUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppLoginUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		19CDF8882CA7FD6800C51334 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		19CDF8932CA803AB00C51334 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		19CDF8952CA8060800C51334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		408C285BF44A01BA6637D165 /* Pods_MyAppLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyAppLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4606769ED20629FA496D274A /* Pods-MyAppLogin-MyAppLoginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAppLogin-MyAppLoginUITests.release.xcconfig"; path = "Target Support Files/Pods-MyAppLogin-MyAppLoginUITests/Pods-MyAppLogin-MyAppLoginUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5CB6309EAB13D957C5C51A6F /* Pods_MyAppLogin_MyAppLoginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyAppLogin_MyAppLoginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,10 +122,11 @@
 		19CDF85D2CA7FB3C00C51334 /* MyAppLogin */ = {
 			isa = PBXGroup;
 			children = (
+				19CDF8952CA8060800C51334 /* Info.plist */,
 				19CDF85E2CA7FB3C00C51334 /* MyAppLoginApp.swift */,
 				19CDF8602CA7FB3C00C51334 /* ContentView.swift */,
 				19CDF8622CA7FB3C00C51334 /* Assets.xcassets */,
-				19CDF8882CA7FD6800C51334 /* GoogleService-Info.plist */,
+				19CDF8932CA803AB00C51334 /* GoogleService-Info.plist */,
 				19CDF8642CA7FB3C00C51334 /* Preview Content */,
 			);
 			path = MyAppLogin;
@@ -297,8 +299,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				19CDF8662CA7FB3C00C51334 /* Preview Assets.xcassets in Resources */,
-				19CDF8892CA7FD6800C51334 /* GoogleService-Info.plist in Resources */,
 				19CDF8632CA7FB3C00C51334 /* Assets.xcassets in Resources */,
+				19CDF8942CA803AB00C51334 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +591,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MyAppLogin/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyAppLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -618,6 +621,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MyAppLogin/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyAppLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
