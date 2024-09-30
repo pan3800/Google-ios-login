@@ -6,16 +6,23 @@
 //
 
 import SwiftUI
+import GoogleSignIn
+import Firebase
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button(action: signIn) {
+                Text("Google로 로그인")
+            }
         }
-        .padding()
+    }
+    
+    func signIn() {
+        if let clientID = FirebaseApp.app()?.options.clientID {
+            print("clientID:", clientID)
+            //let config = GIDConfiguration(clientID: clientID)
+        }
     }
 }
 
