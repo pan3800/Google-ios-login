@@ -9,6 +9,7 @@ target 'MyAppLogin' do
   pod 'AlertToast'
   pod 'SDWebImageSwiftUI'
   pod 'GoogleSignIn'
+  pod 'GoogleSignInSwiftSupport'
   
   target 'MyAppLoginTests' do
     inherit! :search_paths
