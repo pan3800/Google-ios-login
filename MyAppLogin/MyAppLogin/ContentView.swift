@@ -1,33 +1,26 @@
-//
-//  ContentView.swift
-//  MyAppLogin
-//
-//  Created by 임채성 on 2024/09/28.
-//
-
 import SwiftUI
 import GoogleSignIn
-import Firebase
 
 struct ContentView: View {
+    @EnvironmentObject var authServiceModel: AuthServiceModel
+    
     var body: some View {
         VStack {
-            Button(action: signIn) {
-                Text("Google로 로그인")
+            Button {
+                print ( "Google 로그인 탭됨" )
+                authServiceModel.googleSignIn()
+            } label: {
+                Image("ios_light_sq_ctn")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 250, height: 150)
             }
         }
     }
     
-    func signIn() {
-        if let clientID = FirebaseApp.app()?.options.clientID {
-            print("clientID:", clientID)
-            //let config = GIDConfiguration(clientID: clientID)
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

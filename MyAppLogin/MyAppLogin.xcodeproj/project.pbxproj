@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		195C944F2CAA81E30043675D /* AuthServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195C944E2CAA81E30043675D /* AuthServiceModel.swift */; };
 		19CDF85F2CA7FB3C00C51334 /* MyAppLoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDF85E2CA7FB3C00C51334 /* MyAppLoginApp.swift */; };
 		19CDF8612CA7FB3C00C51334 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDF8602CA7FB3C00C51334 /* ContentView.swift */; };
 		19CDF8632CA7FB3C00C51334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19CDF8622CA7FB3C00C51334 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		14534271BD2542C4B1332658 /* Pods_MyAppLoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyAppLoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		195C944E2CAA81E30043675D /* AuthServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceModel.swift; sourceTree = "<group>"; };
 		19CDF85B2CA7FB3C00C51334 /* MyAppLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAppLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CDF85E2CA7FB3C00C51334 /* MyAppLoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppLoginApp.swift; sourceTree = "<group>"; };
 		19CDF8602CA7FB3C00C51334 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		195C944A2CAA80380043675D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				195C944B2CAA803F0043675D /* Model */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		195C944B2CAA803F0043675D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				195C944E2CAA81E30043675D /* AuthServiceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		19CDF8522CA7FB3C00C51334 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +140,7 @@
 		19CDF85D2CA7FB3C00C51334 /* MyAppLogin */ = {
 			isa = PBXGroup;
 			children = (
+				195C944A2CAA80380043675D /* Auth */,
 				19CDF8952CA8060800C51334 /* Info.plist */,
 				19CDF85E2CA7FB3C00C51334 /* MyAppLoginApp.swift */,
 				19CDF8602CA7FB3C00C51334 /* ContentView.swift */,
@@ -428,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195C944F2CAA81E30043675D /* AuthServiceModel.swift in Sources */,
 				19CDF8612CA7FB3C00C51334 /* ContentView.swift in Sources */,
 				19CDF85F2CA7FB3C00C51334 /* MyAppLoginApp.swift in Sources */,
 			);
