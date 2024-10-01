@@ -24,10 +24,12 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct MyAppLoginApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-
+    @StateObject private var authService = AuthServiceModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(authService)
                 .onOpenURL { url in
                     GIDSignIn.sharedInstance.handle(url)
                 }
