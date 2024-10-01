@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct MainView: View {
+    @EnvironmentObject var authServiceModel: AuthServiceModel
+    
     var body: some View {
         VStack {
             Text("Google 소셜 로그인 성공")
+            
+            Button {
+                authServiceModel.signOut()
+                print("로그아웃 성공")
+            } label: {
+                Text("로그아웃하기")
+            }
+
         }
     }
 }
