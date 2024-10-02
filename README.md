@@ -6,6 +6,12 @@
 + 프로젝트와 Firebase 연결
 + 구글 소셜 로그인 만들기
 
-<img src="https://github.com/user-attachments/assets/58becbd2-279c-464c-a27f-8c63da46ca29">  
+<img src="https://github.com/user-attachments/assets/48b52d23-24e7-4594-b5dd-bfe21a023ef5
+">  
+
+
 
    
+
+
+
